@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ernesto Seredinskiy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .snowflake {
+            position: fixed;
+            color: white;
+            user-select: none;
+            pointer-events: none;
+            z-index: 10;
+            animation: fall linear forwards;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-blue-100 min-h-screen font-montserrat text-gray-800 relative overflow-x-hidden">
+    <!-- Snowflakes will be added here by JS -->
+
+    <div class="container mx-auto px-4 py-12 max-w-4xl relative z-20">
+        <div class="bg-white/90 backdrop-blur-sm rounded-xl shadow-xl overflow-hidden border border-white/20">
+            <!-- Header Section -->
+            <div class="bg-gradient-to-r from-blue-500 to-blue-600 p-8 text-center">
+                <h1 class="text-4xl md:text-5xl font-playfair font-semibold text-white tracking-tight">Ernesto Seredinskiy</h1>
+                <p class="text-blue-100 mt-2 text-lg">Software Developer</p>
+            </div>
+
+            <!-- Content Section -->
+            <div class="p-8 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Left Column -->
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-lg text-blue-700 mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-gray-500 text-sm font-medium uppercase tracking-wider">Email</h3>
+                            <a href="mailto:sereernest@gmail.com" class="text-blue-600 hover:text-blue-800 transition-colors">sereernest@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-lg text-blue-700 mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-gray-500 text-sm font-medium uppercase tracking-wider">Phone</h3>
+                            <a href="tel:+79213301390" class="text-blue-600 hover:text-blue-800 transition-colors">+7 (921) 330-13-90</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-lg text-blue-700 mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-gray-500 text-sm font-medium uppercase tracking-wider">Telegram</h3>
+                            <a href="https://t.me/S_k_a_r_a_m_u_c_h_a" target="_blank" class="text-blue-600 hover:text-blue-800 transition-colors">@S_k_a_r_a_m_u_c_h_a</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-lg text-blue-700 mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-gray-500 text-sm font-medium uppercase tracking-wider">GitHub</h3>
+                            <a href="https://github.com/ErnestoAizenberg" target="_blank" class="text-blue-600 hover:text-blue-800 transition-colors">github.com/ErnestoAizenberg</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-lg text-blue-700 mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-gray-500 text-sm font-medium uppercase tracking-wider">Location</h3>
+                            <p>Saint Petersburg, Russia</p>
+                        </div>
+                    </div>
+
+                    <!-- Decorative element -->
+                    <div class="mt-8 pt-6 border-t border-gray-100 text-center">
+                        <p class="text-sm text-gray-500">Let's create something amazing together</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Snowflake Animation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const snowflakes = ['❄', '❅', '❆', '✻', '✼', '✽', '✾', '✿', '❀'];
+            const container = document.body;
+
+            function createSnowflake() {
+                const snowflake = document.createElement('div');
+                snowflake.className = 'snowflake';
+                snowflake.innerHTML = snowflakes[Math.floor(Math.random() * snowflakes.length)];
+
+                // Random size between 10px and 24px
+                const size = Math.random() * 14 + 10;
+                snowflake.style.fontSize = `${size}px`;
+
+                // Random opacity between 0.5 and 1
+                snowflake.style.opacity = Math.random() * 0.5 + 0.5;
+
+                // Random starting position
+                snowflake.style.left = `${Math.random() * 100}vw`;
+                snowflake.style.top = '-20px';
+
+                // Random animation duration between 5s and 15s
+                const duration = Math.random() * 10 + 5;
+                snowflake.style.animationDuration = `${duration}s`;
+
+                container.appendChild(snowflake);
+
+                // Remove snowflake after it falls
+                setTimeout(() => {
+                    snowflake.remove();
+                }, duration * 1000);
+            }
+
+            // Create initial snowflakes
+            for (let i = 0; i < 30; i++) {
+                setTimeout(createSnowflake, Math.random() * 5000);
+            }
+
+            // Keep adding snowflakes
+            setInterval(createSnowflake, 300);
+        });
+    </script>
+</body>
+</html>
